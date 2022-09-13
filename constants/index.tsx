@@ -1,0 +1,22 @@
+export default {
+    COUNTRY_USA: "USA",
+    INTERNATIONAL: "International",
+    AUSTRALIA: "Australia",
+    CANADA: "Canada",
+    ISRAEL: "Israel",
+    SOUTH_AFRICA: "South Africa",
+    UNITED_KINGDOM: "United Kingdom",
+    MYSELF: "Myself",
+    LOCATION: "Location",
+    SOMEONE_ELSE: "Someone Else",
+    PICK_UP: "Pick-up",
+    SHIPPING_INFO: "Shipping Info",
+    SUBSCRIBER_INFO:"Subscriber Info",
+    CONTACT_INFO: "Contact Info",
+    RECIPIENT_CONTACT_INFO:"Recipient's Contact Info",
+    DELIVERY: "Delivery",
+    RECIPIENTS_SHIPPING_INFO: "Recipient's Shipping Info",
+    DIGITAL_PRINT: "Digital + Print",
+    CHAYENU_DIGITAL: "Chayenu Digital",
+    STUDENT_PRINT_DIGITAL:"Student Print Digital"
+  };

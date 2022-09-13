@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Poppins;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+/* .main{
+  display: flex;
+} */
+.content{
+  /* height:calc(100vh - 40px);
+  width: calc(100% - 200px); */
+  /* margin-left:auto; */
+  /* margin-top: 40px; */
+  /* padding: 30px; */
+}
+/* .countryOptions{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+} */
+/* .countrySelectInput:focus+.countryOptions{
+  opacity: 1;
+  visibility: visible;
+  height: 100px;
+} */
+
+.payment-detail.d-none{
+  display: none;
+}
+#dropin-container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+#dropin-container .braintree-show-card .braintree-card{
+  border: 0;
+}
+#dropin-container .braintree-loaded .braintree-sheet__container{
+  margin: 0;
+}
+#dropin-container .braintree-sheet__header,.braintree-placeholder{
+  display: none;
+}
+#dropin-container .braintree-sheet__content--form{
+  padding: 0;
+  margin: 0 -15px;
+}
+#dropin-container .braintree-sheet__content--form .braintree-form__field-group{
+  padding: 0 15px;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+}
+#dropin-container  .braintree-sheet__content--form .braintree-form__field-group .braintree-form__field .braintree-form__hosted-field{
+  border-radius: 4px;
+  height: 40px;
+}
+#dropin-container .braintree-sheet__content--form .braintree-form__field-group .braintree-form__label{
+  font: normal normal normal 18px/27px Poppins;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#dropin-container .braintree-upper-container:before{
+  background-color: transparent;
+}
+#dropin-container .braintree-sheet--has-error .braintree-sheet__error{
+  display: none;
+}
+#dropin-container .braintree-dropin .braintree-hidden{
+  height: initial;
+  width: initial;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
+#dropin-container .braintree-dropin div[data-braintree-id="save-card-field-group"]{
+  display: none;
+}
+.braintree-sheet__content--form .braintree-form__field-group .braintree-form__field.braintree-form__checkbox{
+  position: relative;
+  padding-left: 20px;
+}
+#dropin-container .braintree-sheet__content--form .braintree-form__field-group .braintree-form__field.braintree-form__checkbox input{
+  width: 0;
+  height: 0;
+}
+#dropin-container .braintree-sheet__content--form .braintree-form__field-group .braintree-form__field.braintree-form__checkbox input:checked:before{
+  content: "";
+  width: 9px;
+  height: 4px;
+  margin: 0;
+  display: block;
+  border-left: 1px solid #00AEC4;
+  border-bottom: 1px solid #00AEC4;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+#dropin-container .braintree-sheet__content--form .braintree-form__field-group .braintree-form__field.braintree-form__checkbox input:after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  display: block;
+  border: 1px solid #00AEC4;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  border-radius: 4px;
+}
+.braintree-sheet__content--form .braintree-form__field-group.braintree-form__field-group--card-type-known .braintree-form__field-secondary-icon,
+.braintree-sheet__content--form .braintree-form__field-group .braintree-form__field-secondary-icon{
+  display: none !important;
+}
+.braintree-heading{
+  display: none;
+}
+.braintree-options-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.braintree-options-list .braintree-option{
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 18px;
+  box-shadow: 0px 6px 12px #00000029;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 27px;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: calc(50% - 10px);
+  width: 100%;
+}
+.braintree-options-list .braintree-option .braintree-option__logo{
+  display: none;
+}
+.braintree-options-list .braintree-option .braintree-option__label{
+  margin: 0;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 27px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.braintree-sheet__content--form .braintree-form__field-group .braintree-form__descriptor[data-braintree-id="cvv-label-descriptor"]{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #dropin-container .braintree-sheet__content--form .braintree-form__field-group{
+    flex-basis: 100%;
+  }
+}
+
+.iconImage:hover .correctImg{
+  display: none;
+}
+.iconImage .deleteImg{
+  display: none;
+}
+.iconImage:hover .deleteImg{
+  display: block;
+}
